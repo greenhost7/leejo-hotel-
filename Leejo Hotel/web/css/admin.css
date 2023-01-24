@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+body{
+    font-family: 'Poppins';
+
+}
+.txt-center{
+    text-align: center;
+}
+.kolom{
+    width: 30px;
+}
+.btns{
+    color: white;
+    font-size: 1rem;
+    font-weight: 400;
+    width: 80px;
+    background: #619efa;
+    border-radius: 7px;
+    border: 0;
+    padding: 7px;
+    cursor: pointer;
+}
+.btns:hover{
+    background: #436eb0;
+}
+
+.del{
+    background: red;
+}
+
+.del:hover{
+    background: darkred;
+}
+
+input{
+    width: 20%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    appearance: none;
+    border-radius: 0.375rem;
+}
+
+.split {
+  height: 100%;
+  width: 33.3%;
+  position: absolute;
+  z-index: 1;
+  overflow-x: hidden;
+}
+.split input{
+    width: 60%; 
+}
+
+.left {
+  left: 85px;
+}
+.center{
+  left: 36%;
+  right: 33.3%;
+}
+
+.right {
+  right: 0px;
+}
+.Table {   
+   border-collapse:collapse;
+   border: 0px;
+}
+
+.TableHeader {
+   background:none repeat scroll 0 0 #52a5ff;
+   padding-top: 15px;
+   padding-bottom: 15px;
+   padding-left: 60px;
+   padding-right: 60px;
+}
+.TableOddRow {
+   background:none repeat scroll 0 0 #FFFFFF;
+}
+.TableEvenRow {
+   background:none repeat scroll 0 0 #cfe6ff;
+}
+.sel{
+
+}

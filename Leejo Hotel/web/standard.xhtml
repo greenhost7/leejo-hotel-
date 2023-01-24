@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:a="http://xmlns.jcp.org/jsf/passthrough">
+    <h:head>
+        <title>Leejo | Standard Room</title>
+        <link href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" rel="stylesheet"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"/>
+        <link rel="stylesheet" href="css/style.css"/>
+        <link rel="stylesheet" href="css/admin.css"/>
+
+    </h:head>
+
+    <h:body>
+        <section id="header">
+            <a href="#"><img src="img/leejo-logo.png" class="logo" width="100%" height="100vh" alt=""/></a>
+
+            <div>
+                <ul id="navbar">
+                    <li><a href="index.xhtml">Home</a></li>
+                    <li><a href="catalog.xhtml">Catalog</a></li>
+                    <li><a href="about.xhtml">About</a></li>
+                    <li><a href="contact.xhtml">Contact</a></li>
+                </ul>
+            </div>
+        </section>
+        <section id="prodetails" class="section-p1">
+            <div class="single-pro-image">
+                <img src="img/catalog/standardroom.jpg" width="100%" id="MainImg" alt=""/>
+            </div>
+
+            <div class="single-pro-details">
+                <h6><a href="index.xhtml">Home</a> / <a href="Rooms.xhtml">Rooms</a>  / Standard Room</h6>
+                <h4>Leejo Hotel</h4>
+                <h2>Standard Room</h2>
+                <h3>Rp. 350.000</h3>
+
+                <h4>Room Details</h4>
+                <Span>A single small bed with full standard facility including water heater, refrigerator and air conditioner <br/> <br/> <em>*Breakfast not included</em></Span>
+            </div>
+
+        </section>
+        <!--
+            <h:form style="margin-left: 85px; margin-right: 85px; margin-bottom: 20%">
+                <div class="split left">
+                    IC Number <br/><h:inputText value="#{bookData.icNumber}"/><br/><br/>
+                    Full Name <br/><h:inputText value="#{bookData.fullName}"/><br/><br/>
+                    Email <br/><h:inputText value="#{bookData.email}"/><br/>
+                </div>
+                <div class="split center">
+                    Check in <br/>
+                    <p:calendar value="#{bookData.checkin}">
+                        <f:convertDateTime pattern="mm/dd/yyyy"/>
+                    </p:calendar>
+                    <br/><br/>
+                    Check out <br/>
+                    <p:calendar value="#{bookData.checkout}">
+                        <f:convertDateTime pattern="mm/dd/yyyy"/>
+                    </p:calendar>
+                    <br/><br/>
+                    Room <br/><h:selectOneMenu value="#{bookData.room}" readonly="true">
+                    <f:selectItem itemLabel="Standard Room" itemValue="Standard Room"/>
+                    </h:selectOneMenu><br/><br/>
+                </div>
+                <div class="split right">
+                    Gender <br/><h:inputText a:placeholder="Male/Female" value="#{bookData.gender}"/><br/><br/>
+                    Night <br/><h:inputText value="#{bookData.night}"/><br/><br/><br/>
+                    <h:commandButton class="btns" value="BOOK" action="#{bookData.save()}"/>
+                </div>
+                
+        </h:form>
+        -->
+            <h:form style="margin-left: 85px; margin-right: 85px; margin-bottom: 20%">
+                <div class="split left">
+                    IC Number <br/><h:inputText value="#{bookData.icNumber}"/><br/><br/>
+                    Full Name <br/><h:inputText a:placeholder="John Doe" value="#{bookData.fullName}"/><br/><br/>
+                    Email <br/><h:inputText a:placeholder="example@gmail.com" value="#{bookData.email}"/><br/>
+                </div>
+                <div class="split center">
+                    Check in <br/>
+                    <h:inputText a:placeholder="dd/mm/yyyy" value="#{bookData.checkin}"/>
+                    <br/><br/>
+                    Check out <br/>
+                    <h:inputText a:placeholder="dd/mm/yyyy" value="#{bookData.checkout}"/>
+                    <br/><br/>
+                    Room <br/><h:selectOneMenu value="#{bookData.room}">
+                <f:selectItem itemLabel="Standard Room" itemValue="Standard Room"/>
+            </h:selectOneMenu>
+                    <br/><br/>
+                </div>
+                <div class="split right">
+                    Gender <br/><h:inputText a:placeholder="Male/Female" value="#{bookData.gender}"/><br/><br/>
+                    Night <br/><h:inputText value="#{bookData.night}"/><br/><br/><br/>
+                    <h:commandButton class="btns" value="BOOK" action="#{bookData.save()}"/>
+                </div>
+                
+        </h:form>
+        
+        <br/>
+        <footer class="section-p1">
+            <div>
+                <img src="img/leejo-logo.png" height="200px" alt=""/>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <p><strong>Address:</strong> Leejo Hotel, Perkici Raya No.33</p>
+                <p><strong>Phone:</strong> (087)-878-900-567</p>
+                <p><span><strong>Hours:</strong> 07.00 - 19.00, Mon - Fri</span></p>
+                <div class="follow">
+                    <h4>Follow Us</h4>
+                    <div class="icon">
+                        <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>©️ 2022, Group 2 Project JSF</p>
+            </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+        <script src="js/script.js"></script>
+    </h:body>
+</html>
+

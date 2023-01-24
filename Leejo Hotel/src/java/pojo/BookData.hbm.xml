@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Oct 14, 2022 2:08:15 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="pojo.BookData" table="book_data" catalog="leejo" optimistic-lock="version">
+        <id name="idBook" type="java.lang.Integer">
+            <column name="id_book" />
+            <generator class="identity" />
+        </id>
+        
+        <property name="checkout" type="string">
+            <column name="checkout" length="250" not-null="true" />
+        </property>
+        <property name="checkin" type="string">
+            <column name="checkin" length="250" not-null="true" />
+        </property>
+        <property name="email" type="string">
+            <column name="email" length="250" not-null="true" />
+        </property>
+        <property name="icNumber" type="string">
+            <column name="icNumber" length="20" not-null="true" />
+        </property>
+        <property name="gender" type="string">
+            <column name="gender" length="10" not-null="true" />
+        </property>
+        <property name="night" type="string">
+            <column name="night" length="2" not-null="true" />
+        </property>
+        <property name="room" type="string">
+            <column name="room" length="250" not-null="true" />
+        </property>
+        <property name="fullName" type="string">
+            <column name="FullName" length="250" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
